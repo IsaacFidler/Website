@@ -10,6 +10,7 @@ let welcomeAnchor2 = document.getElementById('welcomeAnchor2')
 let welcomeAnchor3 = document.getElementById('welcomeAnchor3')
 let tog = document.getElementById("toggle")
 
+
 //declare showPanel(0) first to show the first panel when the website loads.
 
 showPanel(0)
@@ -41,7 +42,7 @@ tabButton3.addEventListener("click" , () => {
     tabButton3.style.color = "#F3F1E2";
 })
 
-// function for shifting the different tab content depending on which tab is clicked.
+// showPanel function to load the first tab on opening the website.
 
 function showPanel(panelIndex) {
 
@@ -63,6 +64,7 @@ tog.addEventListener('change', function() {
       welcomeAnchor1.style.background= "#1dd1b3";
       welcomeAnchor2.style.background= "#1dd1b3";
       welcomeAnchor3.style.background= "#1dd1b3";
+      box.style.background = "1dd1b3"
 
   } else {
       document.getElementById("output").innerHTML = "Night Mode On";
