@@ -9,7 +9,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -71,7 +71,7 @@ header{
   opacity: 0;
   width: 0;
   height: 0;
-  
+
 }
 
 /* The slider */
@@ -168,7 +168,7 @@ p{
 }
 .hero{
     width: 100%;
-    height: 550px;
+    height: 580px;
     position: relative;
     margin: auto;
     padding: 10px 10px;
@@ -305,14 +305,15 @@ p{
 .footer {
     background: #343a40;
     color: #a3a3a3;
-    height: 18px;
+
     width: 100%;
     text-align: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+    position: fixed;
+    left:0; right: 0; bottom: 0;
+    height: [18px];
     padding-top: 5px;
     font-size: 12px;
+
 }
 .footer a{
     text-decoration: none;
