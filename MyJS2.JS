@@ -10,6 +10,7 @@ let welcomeAnchor2 = document.getElementById('welcomeAnchor2')
 let welcomeAnchor3 = document.getElementById('welcomeAnchor3')
 let tog = document.getElementById("toggle")
 let colors = ["#6e34eb", "#1dd1b3", "#1A1A1B", "#272729"]
+//array for the sections of the webpage that have their colour changed when the theme toggle is switched.
 let themeContents = [welcomeAnchor1, welcomeAnchor2, welcomeAnchor3, tabContainer]
 
 
@@ -17,6 +18,7 @@ let themeContents = [welcomeAnchor1, welcomeAnchor2, welcomeAnchor3, tabContaine
 
 showPanel()
 
+//using translateX in conjunction with coverflow-x: hidden in the css means the tabs are translated out of view to only reveal the tab that has been clicked on.
 tabButton1.addEventListener("click", () => {
     tab1.style.transform = "translateX(0%)";
     tab2.style.transform = "translateX(-100%)";
